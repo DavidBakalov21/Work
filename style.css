@@ -1,0 +1,146 @@
+.columnText {
+    display: flex;
+    flex-direction: column;
+   
+}
+.columnImageText {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.reducedMargin {
+    margin-top: 4%; 
+    text-decoration: none;
+}
+.reducedMargin2 {
+    margin-top: 2.6%; 
+    text-decoration: none;
+}
+.MarginLi{
+    margin-left: 20%;
+}
+.imageIcon{
+  max-width: 50%;
+  max-height: auto;
+}
+.BGGrey{
+   background-color: #263948;
+}
+.Container{
+    margin-top: 1%;
+display: flex;
+flex-direction: row;
+padding-left: 1%;
+}
+
+.BigBlock{
+    background-color: #263948;
+    width: 35%;
+    border-radius: 14px; 
+    padding: 0.7%;
+    border:3px solid rgb(15, 240, 15);
+}
+.LabelButton{
+    margin-top: 10%;
+    background-color: #2f4a5d;
+    border-radius: 5px;
+    margin-left: 5%;
+    width: 80%;
+    color: white;
+}
+.LabelButtonTitle{
+    margin-top: 10%;
+    background-color: #2f4a5d;
+    border-radius: 5px;
+    color: white;
+}
+.ContainerBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Adjusted to space-between */
+    margin-top: 5%;
+    width: 75%;
+    margin-left: 8%;
+    margin-right: 8%; /* Ensure the container doesn’t touch the edges */
+}
+
+.inputText {
+    height: 20px;
+    margin-left: 10%;
+    width: 40%;
+    border: 3px solid rgb(15, 240, 15);
+    background-color: #263948;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: white; 
+}
+
+.textLabel {
+    margin: 0; 
+    line-height: 1;
+    font-size: 85%;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LabelButtonTitle {
+    width: 50%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleText {
+    font-size: 100%;
+    margin: 0; /* Remove padding and use margin if necessary */
+    white-space: nowrap;
+}
+@media screen and (max-width:1198px) {
+    .reducedMargin {
+        margin-top: 2%; 
+        text-decoration: none;
+    }
+    .reducedMargin2 {
+        margin-top: 2.6%; 
+        text-decoration: none;
+    }
+    .MarginLi{
+        margin-left: 20%;
+    }
+    .imageIcon{
+      max-width: 50%;
+      max-height: auto;
+    }
+    .columnImageText {
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+       align-items: start;
+    }
+    .Container{
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1%;
+    }
+    .BigBlock{
+        background-color: #263948;
+        width: 100%;
+        border-radius: 14px; 
+        padding: 0.7%;
+        border:3px solid rgb(15, 240, 15);
+    }
+    .BigBlock2{
+        background-color: #263948;
+        width: 100%;
+        border-radius: 14px; 
+        padding: 0.7%;
+        border:3px solid rgb(15, 240, 15);
+    }
+}
