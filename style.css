@@ -31,6 +31,7 @@
 display: flex;
 flex-direction: row;
 padding-left: 1%;
+padding-right: 1%;
 }
 .ContainerLow{
     margin-top: 1%;
@@ -40,7 +41,14 @@ padding-left: 1%;
 padding-right: 1%;
 }
 
-
+.BigBlock2{
+    background-color: #263948;
+    width: 64%;
+    margin-left: 1%;
+    border-radius: 14px; 
+    padding: 0.7%;
+    border:3px solid rgb(15, 240, 15);
+}
 .BigBlock{
     background-color: #263948;
     width: 35%;
@@ -63,6 +71,11 @@ padding-right: 1%;
     background-color: #2f4a5d;
     border-radius: 5px;
     color: white;
+    width: 50%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .ContainerBlock {
     display: flex;
@@ -97,15 +110,37 @@ padding-right: 1%;
     justify-content: center;
     align-items: center;
 }
-
-.LabelButtonTitle {
+.flexContainer2 {
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+.LabelButtonTitle2 {
+    margin-top: 1%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+    background-color: #2f4a5d;
+    border-radius: 5px;
+    color: white;
     width: 50%;
     height: 35px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-
+.LabelButtonTitle3 {
+    margin-top: 1%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+    background-color: #2f4a5d;
+    border-radius: 5px;
+    color: white;
+    width: 50%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%; /* Horizontal margin */
+    margin-right: 2%; /* Horizontal margin */
+}
 .titleText {
     font-size: 100%;
     margin: 0; /* Remove padding and use margin if necessary */
@@ -119,7 +154,59 @@ padding-right: 1%;
     border-radius: 14px; 
    
 }
+.textContainer{
+    display: flex;
+    flex-direction: row;
+}
+.lowText{
+    color: white;
+    margin-top: 1%;    
+    margin-bottom: 1%;
+}
+.columnTextLow{
+    width: 25%;
+    margin-left: 15%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.ButtonRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1%;
+}
 @media screen and (max-width:1198px) {
+    .columnTextLow{
+        width: 60%;
+        margin-left: 15%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+    .textContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .LabelButtonTitle3 {
+        margin-top: 2%;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+        background-color: #2f4a5d;
+        border-radius: 5px;
+        color: white;
+        width: 50%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2%; /* Horizontal margin */
+        margin-right: 2%; /* Horizontal margin */
+    }
+    .ButtonRow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+    }
     .reducedMargin {
         margin-top: 2%; 
         text-decoration: none;
