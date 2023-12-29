@@ -62,54 +62,53 @@
     <div class="LabelButton">Приміщення</div>
     <div class="ContainerBlock">
         <p class="textLabel" style="color: white;">ширина</p>
-        <input type="text" class="inputText" placeholder="м."/>
+        <input type="text" id="RoomWidth" class="inputText" placeholder="м."/>
     </div>
     <div class="ContainerBlock">
         <p class="textLabel" style="color: white;">довжина</p>
-        <input type="text" class="inputText" placeholder="м."/>
+        <input type="text" id="RoomLenght" class="inputText" placeholder="м."/>
     </div>
     <div class="LabelButton">Матеріал</div>
     <div class="ContainerBlock">
         <p class="textLabel" style="color: white;">ширина</p>
-        <input type="text" class="inputText" placeholder="м."/>
+        <input type="text" id="MatWidth" class="inputText" placeholder="м."/>
     </div>
     <div class="ContainerBlock">
         <p class="textLabel" style="color: white;">довжина</p>
-        <input type="text" class="inputText" placeholder="м."/>
+        <input type="text" id="MatLenght" class="inputText" placeholder="м."/>
     </div>
     <div class="ContainerBlock">
-        <p class="textLabel" style="color: white;">ширина</p>
-        <input type="text" class="inputText" placeholder="м."/>
+        <p class="textLabel" style="color: white;">упаковка</p>
+        <input type="text" id="PackAmount" class="inputText" placeholder="шт."/>
     </div>
     <div class="ContainerBlock">
-        <p class="textLabel" style="color: white;">довжина</p>
-        <input type="text" class="inputText" placeholder="м."/>
+        <p class="textLabel" style="color: white;">ціна</p>
+        <input type="text" id="PackPrice" class="inputText" placeholder="грн/уп."/>
     </div>
     <div class="LabelButton">Правила укладки</div>
 
     <div class="ContainerBlock">
         <p class="textLabel" style="color: white;">спосіб укладки</p>
-        <input type="text" class="inputText" placeholder="м."/>
-    </div>
-    <div class="ContainerBlock">
-        <p class="textLabel" style="color: white;">напрямок укладки</p>
-        <input type="text" class="inputText" placeholder="м."/>
+        <select id="PlacingRule" class="inputText">
+            <option value="option1">по довжині</option>
+            <option value="option2">по ширині</option>
+        </select>
     </div>
     <div class="ContainerBlock">
         <p class="textLabel" style="color: white;">зміщення рядів</p>
-        <input type="text" class="inputText" placeholder="м."/>
+        <input type="text" id="RowMargin" class="inputText" placeholder="м."/>
     </div>
     <div class="ContainerBlock">
         <p class="textLabel" style="color: white;">відступ від стіни</p>
-        <input type="text" class="inputText" placeholder="м."/>
+        <input type="text" id="WallMargin" class="inputText" placeholder="м."/>
     </div>
     <div class="ContainerBlock">
         <p class="textLabel" style="color: white;">мінімальна ширина ряду</p>
-        <input type="text" class="inputText" placeholder="м."/>
+        <input type="text" id="MinRowWidth" class="inputText" placeholder="м."/>
     </div>
     <div class="ContainerBlock">
         <p class="textLabel" style="color: white; ">мінімальна довжина ряду</p>
-        <input type="text" class="inputText" placeholder="м."/>
+        <input type="text" id="MinRowLenght" class="inputText" placeholder="м."/>
     </div>
     <div class="flexContainer">
         <div class="LabelButtonTitle">
@@ -118,7 +117,14 @@
     </div>
 </div>
 <div class="BigBlock2">
+    <div class="flexContainer2" style="margin-top: 4.5%;">
+        <div class="LabelButtonTitle2">
+            <p class="titleText">Схема укладки</p>
+        </div>
+    </div>
+    <div class="Scheme">
 
+    </div>
 </div>
 </div>
 <div class="ContainerLow">
@@ -148,8 +154,8 @@
 </div>
 <div style="display: flex; flex-direction:row; justify-content: space-between;">
     <p class="lowText">4.Ламінат</p>
-    <p class="lowText">_ шт.</p>
-    <p class="lowText">_ п.</p>
+    <p class="lowText" id="amountNeed">_ шт.</p>
+    <p class="lowText" id="PacksNeed">_ п.</p>
 </div>
 
 <div style="display: flex; flex-direction:row; justify-content: space-between;">
@@ -157,7 +163,11 @@
     <p class="lowText">_ комп.</p>
 
 </div>
+<div style="display: flex; flex-direction:row; justify-content: space-between;">
+    <p class="lowText">5.Ціна матеріалів </p>
+    <p class="lowText" id="Money">_ грн.</p>
 
+</div>
 </div>
 
 <div class="columnTextLow" >

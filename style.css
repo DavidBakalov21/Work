@@ -89,7 +89,7 @@ padding-right: 1%;
 }
 
 .inputText {
-    height: 20px;
+    height: 25px;
     margin-left: 10%;
     width: 40%;
     border: 3px solid rgb(15, 240, 15);
@@ -244,6 +244,7 @@ padding-right: 1%;
     .BigBlock2{
         background-color: #263948;
         width: 100%;
+        margin-top: 1%;
         border-radius: 14px; 
         padding: 0.7%;
         border:3px solid rgb(15, 240, 15);
